@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Quiz Answer Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500|Roboto+Slab|Material+Icons" type="text/css" />
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://geteach.com/scripts/newearth/geteachStyle1227.css" type="text/css" />
+	</head>
+	<body>
+		<div id="container">
+			<main class="panelMain">
+				<div class="mediaContain">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<img class="image" src="${14:imageURL}" />
+							<div class="captionDiv">
+								<div class="caption">Image Source: <a href="${15:imageSourceURL}" target="_blank">${16:imageSourceTitle}</a></div>
+					  		</div>
+					    </div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="title">
+						${1:Tilte}
+					</div>
+					<div class="snippet">
+						${2:Snippet}
+					</div>
+					<div class="description">
+						<div class="Qtext">
+							${3:Question}
+						</div>
+						<button class="mdl-chip mdl-chip--contact mdl-chip--answer ${4:|mdl-chip--correct,mdl-chip--selected mdl-chip--wrong|}">
+							<span class="mdl-chip__contact mdl-color-text--white">
+								<i class="material-icons">${5:|clear,done|}</i>
+							</span>
+							<span class="mdl-chip__text">${6:Response1}</span>
+						</button>
+						<button class="mdl-chip mdl-chip--contact mdl-chip--answer ${7:|mdl-chip--correct,mdl-chip--selected mdl-chip--wrong|}">
+							<span class="mdl-chip__contact mdl-color-text--white">
+								<i class="material-icons">${8:|clear,done|}</i>
+							</span>
+							<span class="mdl-chip__text">${9:Response2}</span>
+						</button>
+						<button class="mdl-chip mdl-chip--contact mdl-chip--answer ${10:|mdl-chip--correct,mdl-chip--selected mdl-chip--wrong|}">
+							<span class="mdl-chip__contact mdl-color-text--white">
+								<i class="material-icons">${11:|clear,done|}</i>
+							</span>
+							<span class="mdl-chip__text">${12:Response1}</span>
+						</button>
+						<p class="text" style="margin-top:28px;">${13:Justification}</p>
+						<br>
+						<br>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="logoLeft">
+						<a href="https://twitter.com/geteach" target="_blank">
+							<img src="https://storage.googleapis.com/geteachkml4/logogeteachtemp.png">
+						</a>
+					</div>
+					<div class="logoRight" style="display:none">
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</html>
